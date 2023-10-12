@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://master--amazing-starlight-586e72.netlify.app",
+    origin: "https://woongjin-web-builder.netlify.app/",
     credentials: true,
   })
 );
