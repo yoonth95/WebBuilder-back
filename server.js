@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "d2ugyri9xuir08.cloudfront.net",
+    origin: "https://d2ugyri9xuir08.cloudfront.net/",
     // origin: "http://localhost:3000",
     credentials: true,
   })
