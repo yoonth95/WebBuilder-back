@@ -3,16 +3,6 @@ require("dotenv").config();
 
 const mysql = require("mysql");
 
-// 공유 db (데스크탑 db 사용 시)
-// const conn = mysql.createConnection({
-//   host: `${process.env.DB_HOST_SHARE}`,
-//   port: "3306",
-//   user: "udemy",
-//   password: `${process.env.DB_PASSWORD_SHARE}`,
-//   database: "udemy",
-// });
-
-// 개인 db (노트북 db 사용 시)
 const conn = mysql.createConnection({
   host: `${process.env.DB_HOST}`,
   port: `${process.env.DB_PORT}`,
