@@ -26,7 +26,7 @@ exports.signUp = async (data) => {
 
 exports.getUserId = async (idx) => {
   try {
-    const result = await query(`SELECT * FROM user where idx = ?`, idx);
+    const result = await query(`SELECT idx, userID, userName FROM user where idx = ?`, idx);
     return result;
   } catch (err) {
     throw err;
